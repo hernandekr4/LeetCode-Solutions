@@ -42,3 +42,10 @@ class Solution {
         return new int[]{};
     }
 }
+
+
+
+/*Create an Instance: Create an instance of the Solution class.
+* Define Input Array and Target: Initialize an array nums1 and a target integer target1.
+* Call twoSum Method: Use the twoSum method of the Solution class to find the indices of the two numbers that add up to target1.
+* Print the Result: Print the indices of the two numbers that add up to the target.*/
