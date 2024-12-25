@@ -38,8 +38,12 @@ public class CeasarCipher{
 
         String result = Result.caesarCipher(s, k);
         String result2 =Result.ceaserCipher2(s, k);
+        String result3 =Result.ceaserCipher2(s, k);
+
         System.out.println(result);
         System.out.println(result2);
+        System.out.println(result3);
+
 
         in.close();
     }
@@ -123,5 +127,28 @@ class Result {
 
 
         }
+
+        public static String ceaserCipher3(String s, int k ){
+            k = k %26;
+
+            String lowerAlphabet = "abcdefghijklmnopqrstuvwxyz";
+            String upperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            HashMap<Character, Character> map = new HashMap<>();
+
+            for(int i =0; i<26;i++){
+                map.put(lowerAlphabet.charAt(i), lowerAlphabet.charAt((i+k)%26));
+                map.put(upperAlphabet.charAt(i), lowerAlphabet.charAt((i+k)%26));
+            }
+
+            StringBuilder result = new StringBuilder();
+
+            for(char c: s.toCharArray()){
+                result.append(map.getOrDefault(c, c));
+            }
+            return result.toString();
+
+        }
+
     
 }

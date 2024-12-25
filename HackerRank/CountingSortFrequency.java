@@ -12,7 +12,7 @@ public class CountingSortFrequency {
      */
     public static void main(String[] args) {
         // Example input list
-        List<Integer> arr = List.of(2, 5, 3, 5, 2);
+        List<Integer> arr = List.of(2, 5, 99, 99, 2);
 
         // Call the countingSort method and store the result
         List<Integer> frequency = countingSort(arr);
