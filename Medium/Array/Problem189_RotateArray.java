@@ -1,4 +1,4 @@
-package Medium;
+package Medium.Array;
 
 /**
  * 12/25/2024 12:16AM

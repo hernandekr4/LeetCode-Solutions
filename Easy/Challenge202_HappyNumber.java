@@ -22,9 +22,9 @@ public class Challenge202_HappyNumber {
             int sum =0;
 
             while(n>0){
-                int digit = n %10;
-                sum += digit * digit;
-                n = n/10;
+                int digit = n %10; //take last digit 
+                sum += digit * digit; //and multiply it by itself
+                n = n/10; //remove last digit
             }
            return sum;
     }

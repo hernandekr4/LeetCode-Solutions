@@ -1,4 +1,4 @@
-package Medium;
+package Medium.Array;
 
 public class Challenge80_RemoveDuplicatesFromSortedArray {
     
