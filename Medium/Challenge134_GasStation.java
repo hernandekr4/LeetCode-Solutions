@@ -18,6 +18,7 @@ class GasStation{
 
         for(int i =0; i< gas.length;i++){
             int currentGas = gas[i]-cost[i];
+            total += currentGas;
             tank += currentGas;
 
             if(tank < 0){
