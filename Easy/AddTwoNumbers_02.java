@@ -20,7 +20,7 @@ class ListNode{
 
 public class AddTwoNumbers_02{
     public ListNode addTwoNumbers(ListNode l1, ListNode l2){
-        //create a duymym node for edge cases (adding first node )
+        //create a dummy node for edge cases (adding first node )
             ListNode dummyHead = new ListNode(0);
             ListNode current = dummyHead; // 'current' pointer helps in building the resultant list 
             //Keep track of overflow 
